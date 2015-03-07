@@ -1,6 +1,6 @@
-/.nb-gradle/private/
+/java_algs_impl/.nb-gradle/private/
 *.class
 *.bin
-/build/*
-/.settings/*
-/.gradle/*
+/java_algs_impl/build/*
+/java_algs_impl/.settings/*
+/java_algs_impl/.gradle/*
