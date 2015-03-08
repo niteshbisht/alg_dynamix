@@ -1,0 +1,6 @@
+/java_algos_impl/.nb-gradle/private/
+*.class
+*.bin
+/java_algos_impl/build/*
+/java_algos_impl/.settings/*
+/java_algos_impl/.gradle/*

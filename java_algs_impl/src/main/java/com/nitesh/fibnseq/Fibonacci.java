@@ -90,8 +90,9 @@ public class Fibonacci {
              
             FibonacciThread fibonacciThread1 = new FibonacciThread(index - 2);
             fibonacciThread1.executorService=executorService;
-            Future future = executorService.submit(fibonacciThread1);
-            Object object = future.get();
+            Future<?> future = executorService.submit(fibonacciThread1);
+            @SuppressWarnings("unused")
+			Object object = future.get();
             int resultPart2 = fibonacciSum(index - 1, executorService);
             int result = fibonacciThread1.result + resultPart2;
             //executorService.shutdown();

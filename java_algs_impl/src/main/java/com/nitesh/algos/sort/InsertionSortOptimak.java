@@ -5,16 +5,17 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import com.nitesh.algos.search.BinarySearchInsertSortCase;
 
-public class InsertionSort {
-
+public class InsertionSortOptimak {
 	private volatile int[] array;
 
 	public int[] getArray() {
 		return array;
 	}
 
-	public InsertionSort(String filename) {
+	public InsertionSortOptimak(String filename) {
 		File f = new File("src/test/resources/" + filename + ".txt");
 		String s;
 		try {
@@ -39,17 +40,22 @@ public class InsertionSort {
 		for (int j = 1; j < array.length; j++) {
 			int key = array[j];
 			int i = j - 1;
-			while (i >= 0 && array[i] > key) {
-				array[i + 1] = array[i];
-				i = i - 1;
+			int rank = BinarySearchInsertSortCase.rank(key,
+					Arrays.copyOfRange(array, 0, i + 1));
+			if (rank != j) {
+				int temp = array[rank];
+				array[rank] = key;
+				array[rank + 1] = temp;
 			}
-			array[i + 1] = key;
-			//System.out.println("Pass " + j + " the array is -->");
+			// System.out.println("Pass " + j + " the array is -->");
 			/*
 			 * for(int p=0;p<array.length;p++) System.out.print(array[p]+" ");
 			 * System.out.println();
 			 */
 		}
-		System.out.println("BenchMark for Traditional/Trivial Insertion Sort "+(System.nanoTime() - t1));
+		for(int p=0;p<array.length;p++) 
+			System.out.print(array[p]+" ");
+		System.out.println("BenchMark for Optimal Insertion Sort With BinarySearch Use : "+(System.nanoTime() - t1));
 	}
+
 }
