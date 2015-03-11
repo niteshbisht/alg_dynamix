@@ -7,10 +7,10 @@ import java.util.concurrent.Future;
 public class Fibonacci {
     private static long[] value;
  
-    public static void main(String args[]) throws InterruptedException {
+    public static void doGenerateFibonaci(String string) throws InterruptedException {
         int n;
         try {
-            n = 20;
+            n = 50;
         } catch (Exception e) {
             throw new RuntimeException(
                     "Please enter in the form java n number ");

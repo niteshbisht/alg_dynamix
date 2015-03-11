@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 
 public class PlaywithPointersTest {
 
-	@Test
+	//@Test
 	public void testPlayWithPointers() {
 		PlaywithPointers ppt=new PlaywithPointers();
 		CharPtr m =ppt.playPointers("Hello");
@@ -19,7 +19,7 @@ public class PlaywithPointersTest {
 		
 	}
 	
-	@Test
+	//@Test
 	public void testPlayWithPointersReversal() {
 		PlaywithPointers ppt=new PlaywithPointers();
 		CharPtr m =ppt.playPointers("IOU");
