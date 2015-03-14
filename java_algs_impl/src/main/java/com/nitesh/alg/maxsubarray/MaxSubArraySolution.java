@@ -19,12 +19,19 @@ public class MaxSubArraySolution {
 
 	private BundleResult findMaxCrossingSubArray(int[] A, int low, int mid,
 			int high) {
+		System.out
+				.println("Low = " + low + " Mid = " + mid + " High = " + high);
+		for (int p = low; p <= high; p++) {
+			System.out.print("A[" + p + "] = " + A[p]);
+			System.out.print(" | ");
+		}
+		System.out.println();
 		long sum = 0;
 		int max_left = 0;
 		int max_right = 0;
 		long left_sum = Long.MIN_VALUE;
 		long right_sum = Long.MIN_VALUE;
-		for (int i = mid; i > low; i--) {
+		for (int i = mid; i >= low; i--) {
 			sum += A[i];
 			if (sum > left_sum) {
 				left_sum = sum;
@@ -32,7 +39,7 @@ public class MaxSubArraySolution {
 			}
 		}
 		sum = 0;
-		for (int j = mid + 1; j < high; j++) {
+		for (int j = mid + 1; j <= high; j++) {
 			sum += A[j];
 			if (sum > right_sum) {
 				right_sum = sum;

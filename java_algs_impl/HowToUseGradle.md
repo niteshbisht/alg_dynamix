@@ -9,4 +9,3 @@ generate jacoco reports
 
 in build.gradle mention this line at top
 --> apply plugin: "jacoco"
-

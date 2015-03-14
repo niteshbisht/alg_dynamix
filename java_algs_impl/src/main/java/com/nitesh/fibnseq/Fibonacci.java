@@ -10,7 +10,7 @@ public class Fibonacci {
     public static void doGenerateFibonaci(String string) throws InterruptedException {
         int n;
         try {
-            n = 50;
+            n = 20;
         } catch (Exception e) {
             throw new RuntimeException(
                     "Please enter in the form java n number ");

@@ -10,11 +10,12 @@ public class MaxSubArraySolutionTest {
 	public void test_findMaxSubArray() {
 
 		MaxSubArraySolution mxsar = new MaxSubArraySolution();
-		int[] a = { 15, 12, 11, 10, 8, 2, 3, 6, 8, 9, 10, 11, 13, 12, 16, 14 };
+		int[] a = { 2 , -3 , -9 , 7 , 8 , -1, -2, -3 , -8, 9};
 		int sum = 0;
-		for (int i = 0; i <= 15; i++) {
-			System.out.println(" i : "+i+" Value = a["+i+"]"+a[i]);
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(" a["+i+"] = "+a[i]);
 		}
+		System.out.println();
 		
 		int high = a.length - 1;
 		int low = 0;
