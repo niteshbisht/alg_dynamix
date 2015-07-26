@@ -7,6 +7,23 @@ public class ElasticDBStore implements Subject {
 
 	private Vector<Observer> observerVectr;
 	private String operation;
+
+	public String getOperation() {
+		return operation;
+	}
+
+	public void setOperation(String operation) {
+		this.operation = operation;
+	}
+
+	public String getRecord() {
+		return record;
+	}
+
+	public void setRecord(String record) {
+		this.record = record;
+	}
+
 	private String record;
 
 	/**
