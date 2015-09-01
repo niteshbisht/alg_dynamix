@@ -1,0 +1,176 @@
+{
+    "childNodes": {
+        "Bussiness Group": [
+            {
+                "childNodes": {
+                    "Information System": [
+                        {
+                            "childNodes": {
+                                "Info Sec Group": [
+                                    {
+                                        "childNodes": {
+                                            "Authentication Group": [
+                                                {
+                                                    "childNodes": {
+                                                        "Datacenter Group": [
+                                                            {
+                                                                "childNodes": {
+                                                                    "Certificate Group": [
+                                                                        {
+                                                                            "childNodes": {
+                                                                                "Tokens Group": [
+                                                                                    {
+                                                                                        "childNodes": {},
+                                                                                        "levelIndex": 7,
+                                                                                        "levelName": "Tokens Group"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "levelIndex": 6,
+                                                                            "levelName": "Certificate Group"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "levelIndex": 5,
+                                                                "levelName": "Datacenter Group"
+                                                            }
+                                                        ],
+                                                        "DatawareHouse Group": [
+                                                            {
+                                                                "childNodes": {},
+                                                                "levelIndex": 5,
+                                                                "levelName": "DatawareHouse Group"
+                                                            }
+                                                        ],
+                                                        "Facilities Group": [
+                                                            {
+                                                                "childNodes": {},
+                                                                "levelIndex": 5,
+                                                                "levelName": "Facilities Group"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "levelIndex": 4,
+                                                    "levelName": "Authentication Group"
+                                                }
+                                            ]
+                                        },
+                                        "levelIndex": 3,
+                                        "levelName": "Info Sec Group"
+                                    }
+                                ],
+                                "Info Sec Admin": [
+                                    {
+                                        "childNodes": {},
+                                        "levelIndex": 3,
+                                        "levelName": "Info Sec Admin"
+                                    }
+                                ],
+                                "Infrastructure Team": [
+                                    {
+                                        "childNodes": {
+                                            "Store Team": [
+                                                {
+                                                    "childNodes": {
+                                                        "Network Team": [
+                                                            {
+                                                                "childNodes": {
+                                                                    "Finance Team": [
+                                                                        {
+                                                                            "childNodes": {
+                                                                                "Records Team": [
+                                                                                    {
+                                                                                        "childNodes": {},
+                                                                                        "levelIndex": 7,
+                                                                                        "levelName": "Records Team"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "levelIndex": 6,
+                                                                            "levelName": "Finance Team"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "levelIndex": 5,
+                                                                "levelName": "Network Team"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "levelIndex": 4,
+                                                    "levelName": "Store Team"
+                                                }
+                                            ]
+                                        },
+                                        "levelIndex": 3,
+                                        "levelName": "Infrastructure Team"
+                                    }
+                                ]
+                            },
+                            "levelIndex": 2,
+                            "levelName": "Information System"
+                        }
+                    ]
+                },
+                "levelIndex": 1,
+                "levelName": "Bussiness Group"
+            }
+        ],
+        "Wealth Management": [
+            {
+                "childNodes": {
+                    "Parallel System": [
+                        {
+                            "childNodes": {
+                                "SSL Support Team": [
+                                    {
+                                        "childNodes": {
+                                            "Device Support": [
+                                                {
+                                                    "childNodes": {
+                                                        "Helpdesk Team": [
+                                                            {
+                                                                "childNodes": {
+                                                                    "24x7 Support Team": [
+                                                                        {
+                                                                            "childNodes": {
+                                                                                "Routing Support": [
+                                                                                    {
+                                                                                        "childNodes": {},
+                                                                                        "levelIndex": 7,
+                                                                                        "levelName": "Routing Support"
+                                                                                    }
+                                                                                ]
+                                                                            },
+                                                                            "levelIndex": 6,
+                                                                            "levelName": "24x7 Support Team"
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                "levelIndex": 5,
+                                                                "levelName": "Helpdesk Team"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "levelIndex": 4,
+                                                    "levelName": "Device Support"
+                                                }
+                                            ]
+                                        },
+                                        "levelIndex": 3,
+                                        "levelName": "SSL Support Team"
+                                    }
+                                ]
+                            },
+                            "levelIndex": 2,
+                            "levelName": "Parallel System"
+                        }
+                    ]
+                },
+                "levelIndex": 1,
+                "levelName": "Wealth Management"
+            }
+        ]
+    },
+    "levelIndex": 0,
+    "levelName": null
+}
