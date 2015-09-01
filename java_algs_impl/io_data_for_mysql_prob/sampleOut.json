@@ -65,7 +65,23 @@
                                         "levelIndex": 3,
                                         "levelName": "Info Sec Admin"
                                     }
-                                ],
+                                ]
+                            },
+                            "levelIndex": 2,
+                            "levelName": "Information System"
+                        }
+                    ]
+                },
+                "levelIndex": 1,
+                "levelName": "Bussiness Group"
+            }
+        ],
+        "Wealth Management": [
+            {
+                "childNodes": {
+                    "Midsider System": [
+                        {
+                            "childNodes": {
                                 "Infrastructure Team": [
                                     {
                                         "childNodes": {
@@ -107,17 +123,9 @@
                                 ]
                             },
                             "levelIndex": 2,
-                            "levelName": "Information System"
+                            "levelName": "Midsider System"
                         }
-                    ]
-                },
-                "levelIndex": 1,
-                "levelName": "Bussiness Group"
-            }
-        ],
-        "Wealth Management": [
-            {
-                "childNodes": {
+                    ],
                     "Parallel System": [
                         {
                             "childNodes": {
