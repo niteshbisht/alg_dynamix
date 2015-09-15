@@ -13,9 +13,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+
 
 public class TreeTraversal {
 
@@ -78,20 +80,16 @@ public class TreeTraversal {
 				}
 		}
 		ObjectMapper om = new ObjectMapper();
-		try {
-			String s = om.writeValueAsString(rootNode);
-			fo.write(s.getBytes());
-			fo.flush();
-		} catch (JsonGenerationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
+			String s;
+			try {
+				s = om.writeValueAsString(rootNode);
+				fo.write(s.getBytes());
+				fo.flush();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 
 	private void putdataInTreeInRedundantCase(TreeStructure rootNode,

@@ -5,10 +5,9 @@ import java.util.List;
 import java.util.Map;
 
 public class TreeStructure {
-
-	private Map<String, List<TreeStructure>> childNodes = new LinkedHashMap<String, List<TreeStructure>>();
 	private int levelIndex;
 	private String levelName;
+	private Map<String, List<TreeStructure>> childNodes = new LinkedHashMap<String, List<TreeStructure>>();
 
 	public Map<String, List<TreeStructure>> getChildNodes() {
 		return childNodes;

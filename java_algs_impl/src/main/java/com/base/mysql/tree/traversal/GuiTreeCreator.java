@@ -29,10 +29,15 @@ public class GuiTreeCreator {
 			throws JsonProcessingException, IOException {
 		File f = new File(path);
 		ObjectMapper om = new ObjectMapper();
-		JsonNode jnode = om.readTree(f);
+		TreeStructure ys = om.readValue(f, TreeStructure.class);
+		JsonNode jnode = om.readTree(om.writeValueAsBytes(ys));
 		//cleanTree(jnode);
 		putJsonNodeInRoot(jnode);
+		//
 		System.out.println(jnode);
+		File f2 = new File("io_data_for_mysql_prob/outputclean.json");
+		om.writeValue(f2, jnode);
+		
 	}
 
 	public static void cleanTree(JsonNode rootNode) {
