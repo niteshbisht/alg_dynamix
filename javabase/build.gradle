@@ -15,6 +15,7 @@ sourceSets {
     main {
         java {
             srcDir 'src/main/java'
+            srcDir 'src/main/collections'
         }
         resources {
             srcDir 'src/main/resources'
@@ -28,15 +29,5 @@ sourceSets {
             srcDir 'src/test/resources'
         }
     }
-}
-
-println sourceSets.main.output.classesDir
-println sourceSets['main'].output.classesDir
-sourceSets {
-    println main.output.classesDir
-}
-
-task testReport(type: TestReport) {
-    destinationDir = file("$buildDir/reports/allTests")
-}    
+}  
     
