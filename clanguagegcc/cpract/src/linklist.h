@@ -41,11 +41,11 @@ void addNodeAtEnd(M_NODE* startNode, M_NODE* dataNode) {
 	dataNode->plink = temp;
 }
 
-void addNodeAtAfter(M_NODE* startNode, M_NODE* afterNode, M_NODE* dataNode) {
+void addNodeAtBefore(M_NODE* startNode, M_NODE* beforeNode, M_NODE* dataNode) {
 	M_NODE* temp = startNode;
 	M_NODE* tempLink;
 	while (temp->nlink != NULL) {
-		if (temp->nlink == afterNode)
+		if (temp->nlink == beforeNode)
 			break;
 		temp = temp->nlink;
 	}
