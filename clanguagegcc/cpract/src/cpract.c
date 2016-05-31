@@ -29,7 +29,6 @@ int main(void) {
 
 	dataNode = createDataNode(4);
 	addNodeAtEnd(headNode,dataNode);
-
 	dataNode = createDataNode(5);
 	addNodeAtBefore(headNode,beforeNode,dataNode);
 
