@@ -16,6 +16,13 @@ jacocoTestReport {
 }
 
 dependencies {
+def poiVersion = "3.14"
 compile group: 'junit', name: 'junit', version: '4.11'
+// https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-core-asl
+compile group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.6'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.3.3'
+compile group: 'org.apache.poi', name: 'poi', version: '3.14'
+compile "org.apache.poi:poi-ooxml:${poiVersion}"
 
 }

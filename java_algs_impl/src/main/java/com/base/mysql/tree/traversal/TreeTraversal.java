@@ -261,7 +261,7 @@ public class TreeTraversal {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager
 					.getConnection("jdbc:mysql://localhost/sqlpract?"
-							+ "user=root&password=welcome");
+							+ "user=root&password=root");
 			statement = con.createStatement();
 			ResultSet rs = statement
 					.executeQuery("select * from sqlpract.tree");
