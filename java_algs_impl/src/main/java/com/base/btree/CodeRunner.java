@@ -2,7 +2,9 @@ package com.base.btree;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class CodeRunner {
 
 	public static void main(String[] args) {
@@ -19,8 +21,7 @@ public class CodeRunner {
 		try {
 			System.out.println(om.writeValueAsString(tcl.getBase()));
 		} catch (JsonProcessingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("Error in processing ", e);
 		}
 	}
 }

@@ -7,7 +7,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
 import com.nitesh.algos.search.BinarySearchInsertSortCase;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class InsertionSortOptimak {
 	private volatile int[] array;
 
@@ -27,11 +29,9 @@ public class InsertionSortOptimak {
 					array[i] = Integer.parseInt(p[i]);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("Error loading File", e);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("Error loading File", e);
 		}
 	}
 
@@ -47,15 +47,10 @@ public class InsertionSortOptimak {
 				array[rank] = key;
 				array[rank + 1] = temp;
 			}
-			// System.out.println("Pass " + j + " the array is -->");
-			/*
-			 * for(int p=0;p<array.length;p++) System.out.print(array[p]+" ");
-			 * System.out.println();
-			 */
 		}
-		for(int p=0;p<array.length;p++) 
-			System.out.print(array[p]+" ");
-		System.out.println("BenchMark for Optimal Insertion Sort With BinarySearch Use : "+(System.nanoTime() - t1));
+		for(int p=0;p<array.length;p++)
+			log.info(array[p]+" ");
+		log.info("BenchMark for Optimal Insertion Sort With BinarySearch Use : {}"+(System.nanoTime() - t1));
 	}
 
 }

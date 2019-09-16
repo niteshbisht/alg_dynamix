@@ -1,11 +1,13 @@
 package com.nitesh.algos.sort;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-
+@Slf4j
 public class InsertionSort {
 
 	private volatile int[] array;
@@ -26,11 +28,9 @@ public class InsertionSort {
 					array[i] = Integer.parseInt(p[i]);
 			}
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("Error ", e);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			log.error("Error ", e);
 		}
 	}
 
@@ -44,12 +44,7 @@ public class InsertionSort {
 				i = i - 1;
 			}
 			array[i + 1] = key;
-			//System.out.println("Pass " + j + " the array is -->");
-			/*
-			 * for(int p=0;p<array.length;p++) System.out.print(array[p]+" ");
-			 * System.out.println();
-			 */
 		}
-		System.out.println("BenchMark for Traditional/Trivial Insertion Sort "+(System.nanoTime() - t1));
+		log.info("BenchMark for Traditional/Trivial Insertion Sort {}"+(System.nanoTime() - t1));
 	}
 }
